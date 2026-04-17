@@ -8,11 +8,13 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '当日の手順', link: '/guide' },
+      { text: '開発ガイド', link: '/VitePress-dev' }
     ],
     sidebar: [
       {
         items: [
           { text: '当日の手順', link: '/guide' },
+          { text: '開発ガイド', link: '/VitePress-dev' }
         ],
       },
     ],
