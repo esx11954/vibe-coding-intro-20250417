@@ -23,7 +23,12 @@ irm https://gist.githubusercontent.com/esx11954/ab9dffb7b0020d66c2f8d2102e170631
 ### Mac（Terminal）
 
 ```bash
-curl -fsSL https://gist.githubusercontent.com/esx11954/ab9dffb7b0020d66c2f8d2102e170631/raw/5a5329be48bd6cd5a4b518959f1ce07d64cfef33/setup.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+\. "$HOME/.nvm/nvm.sh"
+nvm install 24
+node -v
+npm -v
+npm install -g @google/gemini-cli
 ```
 
 ---
@@ -31,6 +36,7 @@ curl -fsSL https://gist.githubusercontent.com/esx11954/ab9dffb7b0020d66c2f8d2102
 ## Gemini CLI 動作確認
 
 ターミナルで `gemini` コマンドを実行し、ご自身のGoogleアカウントでログインしてください。
+※起動しない場合はターミナルを再起動して下さい。
 
 ```bash
 gemini
